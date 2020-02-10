@@ -1,0 +1,115 @@
+/*Home */
+#nav{
+    transition: .5s;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.bg-black {
+    background: #161616;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0;
+}
+.home{
+    height: 80vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.home-h1{
+    letter-spacing: 2px;
+    color: gray;
+    font-size: 60px;
+}
+.title{
+    letter-spacing: 2px;
+}
+.kh-cont img {
+    transition: .7s;
+    cursor: pointer;
+}
+.kh-cont:hover img{
+    transform: scale(1.05);
+    transition: .7s;
+}
+.kh-cont .img-cont{
+    max-height: 455px;
+}
+.work-section{
+    background: rgb(21, 21, 21);
+}
+/*Home End*/
+
+/*shop*/
+
+.shop{
+    background: #151515;
+    padding-top: 90px;
+}
+.ls-2{
+    letter-spacing: 2px;
+}
+.tab-content>.active{
+    display: flex;
+}
+.shop .kh-cont .img-cont {
+    max-height: 320px;
+}
+.shop .nav-link {
+    color: rgba(255,255,255,.5);
+}
+.shop .item-cont .active {
+    color: #fff;
+}
+
+/*shop end*/
+
+/*about*/
+.about-section{
+    padding-top: 90px;
+    background: #151515;
+}
+/*about end*/
+
+/*footer*/
+
+footer {
+    background: #151515;
+    padding: 100px 0;
+}
+footer p {
+    font-size: 14px;
+}
+
+
+/*footer end*/
+/*for only desktops*/
+@media all and (min-width: 991px) {
+    /*Home*/
+
+    #nav.navbar{
+        height: 90px;
+        padding-bottom: 0;
+    }
+    #nav .nav-item:hover{
+        border-bottom: 1px solid rgba(255,255,255,.75);
+        transition: ease-in-out .3s;
+    }
+    #nav .nav-item{
+        margin-right: 35px;
+        padding-bottom: 10px;
+    }
+    #nav .nav-item.active{
+        border-bottom: 1px solid white;
+    }
+
+    /*home end*/
+
+    /*about*/
+    .about-section .container-fluid{
+        padding: 100px;
+    }
+    /*about end*/
+}
+
+

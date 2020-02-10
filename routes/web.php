@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'site\HomeController@index');
+Route::get('/shop', 'site\ShopController@index');
+Route::get('/about-us', 'site\AboutController@index');
 
 Auth::routes();
 

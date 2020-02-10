@@ -28,7 +28,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $data = Product::paginate(5000);
+        $data = Product::orderBy("id", "Desc")->paginate(5000);
         $route = self::ROUTE;
         $title = self::TITLE;
         return view(self::VIEW . ".index", compact("data", "route", "title"));
@@ -58,6 +58,7 @@ class ProductController extends Controller
             'name' => 'required|max:100',
             'price' => 'required|max:100',
             'material' => 'required|max:100',
+            'category' => 'required|max:100',
             'height' => 'required|max:100',
             'width' => 'required|max:100',
             'thickness' => 'required|max:100',
@@ -71,6 +72,7 @@ class ProductController extends Controller
         $product->type_id = $request->type_id;
         $product->price = $request->price;
         $product->material = $request->material;
+        $product->category = $request->category;
         $product->height = $request->height;
         $product->width = $request->width;
         $product->thickness = $request->thickness;
@@ -119,13 +121,13 @@ class ProductController extends Controller
             'name' => 'required|max:100',
             'price' => 'required|max:100',
             'material' => 'required|max:100',
+            'category' => 'required|max:100',
             'height' => 'required|max:100',
             'width' => 'required|max:100',
             'thickness' => 'required|max:100',
             'image' => 'image|max:10000',
             'location' => 'max:100',
         ]);
-
         if(null != $request->image) {
             $file = FileUpload::upload(self::UPLOAD, $request->image, $product->image);
             $product->image = $file;
@@ -134,6 +136,7 @@ class ProductController extends Controller
         $product->name = $request->name;
         $product->type_id = $request->type_id;
         $product->price = $request->price;
+        $product->category = $request->category;
         $product->material = $request->material;
         $product->height = $request->height;
         $product->width = $request->width;
