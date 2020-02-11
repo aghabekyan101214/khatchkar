@@ -7,7 +7,7 @@
                 <div class="panel-heading">  {{ $action . " " . $title }}</div>
                 <div class="panel-wrapper collapse in" aria-expanded="true">
                     <div class="panel-body">
-                        <form action="/{{ $route . "/" . ( $product->id ?? "" ) }}" enctype="multipart/form-data" method="post" class="form-horizontal form-bordered">
+                        <form action="/{{ $route . (isset($product->id) ? ("/" . $product->id) : "") }}" enctype="multipart/form-data" method="post" class="form-horizontal form-bordered">
                             @csrf
                             @if(isset($product))
                                 @method("PUT")

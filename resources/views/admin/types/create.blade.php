@@ -7,7 +7,7 @@
                 <div class="panel-heading">  {{ $action . " " . $title }}</div>
                 <div class="panel-wrapper collapse in" aria-expanded="true">
                     <div class="panel-body">
-                        <form action="/{{ $route . "/" . ( $type->id ?? "" ) }}" method="post" class="form-horizontal form-bordered">
+                        <form action="/{{ $route . (isset($type->id) ? ("/" . $type->id) : "") }}" method="post" class="form-horizontal form-bordered">
                             @csrf
                             @if(isset($type))
                                 @method("PUT")
