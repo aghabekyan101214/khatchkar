@@ -6,6 +6,7 @@ use App\admin\Product;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\admin\Type;
+use Illuminate\Database\Eloquent\Builder;
 
 class ShopController extends Controller
 {
@@ -25,10 +26,11 @@ class ShopController extends Controller
      */
     public function index()
     {
-        $items = Type::whereHas("items", function($query){
-           return $query->where("category", Product::CATEGORIES[0]);
-        })->get();
+        $items = Type::with(["items" => function($query){
+            $query->where("category", Product::CATEGORIES[0]);
+        }])->get();
         $products = Product::orderBy("id", "desc")->where("category", Product::CATEGORIES[0])->paginate(5000);
         return view(self::VIEW . ".index", compact("items", "products"));
     }
 }
+
