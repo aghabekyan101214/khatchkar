@@ -19,10 +19,10 @@
                             <img class="img-fluid" src="{{ asset("uploads/$r->image") }}" alt="{{ $r->name }}">
                         </div>
                         <div class="col-md-12 mt-3">
-                            <p class="text-center text-white">Khatchkar 1</p>
+                            <p class="text-center text-white">{{ $r->name }}</p>
                         </div>
                         <div class="col-md-12">
-                            <p class="text-center text-white">$65.00</p>
+                            <p class="text-center text-white">${{ $r->price }}</p>
                         </div>
                     </div>
 

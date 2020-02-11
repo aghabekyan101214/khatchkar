@@ -46,9 +46,6 @@
                 <li class="nav-item">
                     <a class="nav-link text-uppercase" href="/contact-us">Contact Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="/our-mission">Our Mission</a>
-                </li>
             </ul>
         </div>
     </nav>

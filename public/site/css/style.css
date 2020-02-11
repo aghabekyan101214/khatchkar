@@ -144,4 +144,10 @@ footer p {
     /*about end*/
 }
 
+@media all and (max-width: 990px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+
 
