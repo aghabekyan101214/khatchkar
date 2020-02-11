@@ -14,6 +14,9 @@
 Route::get('/', 'site\HomeController@index');
 Route::get('/shop', 'site\ShopController@index');
 Route::get('/about-us', 'site\AboutController@index');
+Route::get('/gallery', 'site\GalleryController@index');
+Route::get('/contact-us', 'site\ContactController@index');
+Route::post('/send-email', 'site\ContactController@sendEmail');
 
 Auth::routes();
 

@@ -20,7 +20,9 @@
 
 </head>
 <body class="fix-header">
-
+@if (\Session::has('success'))
+    <script> alert("{{ Session::get("success") }}") </script>
+@endif
 <div class="page-wrapper">
     <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top" id="nav">
         <a class="navbar-brand ml-lg-5" href="/">MyKhatchkarLogo</a>
@@ -34,6 +36,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-uppercase" href="/shop">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="/gallery">Gallery</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-uppercase" href="/about-us">About Us</a>

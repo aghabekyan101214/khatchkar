@@ -71,6 +71,38 @@
 }
 /*about end*/
 
+/*Gallery*/
+
+.gallery{
+    padding-top: 90px;
+    background: #151515;
+}
+
+/*Gallery End*/
+
+/*Contact */
+
+.contact{
+    padding-top: 90px;
+    background: #151515;
+}
+.contact-form input, .contact-form textarea  {
+    background: black;
+    border: 0;
+    border-radius: 0;
+    height: 50px;
+    color: white;
+}
+.contact-form textarea {
+    height: auto;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    background: black;
+    box-shadow: none;
+    color: white;
+}
+
+/*Contact End*/
 /*footer*/
 
 footer {
