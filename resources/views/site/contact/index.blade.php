@@ -13,19 +13,19 @@
                 <div class="col-md-7">
                     @csrf
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" name="name" placeholder="Name">
+                        <input type="text" autocomplete="off" class="form-control" name="name" placeholder="Name">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" name="email" placeholder="Email">
+                        <input type="email" autocomplete="off" class="form-control" name="email" placeholder="Email">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="tel" class="form-control" name="phone" placeholder="Phone">
+                        <input type="tel" autocomplete="off" class="form-control" name="phone" placeholder="Phone">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="file" class="form-control" name="image" placeholder="Phone">
+                        <input type="file" autocomplete="off" class="form-control" name="image" placeholder="Phone">
                     </div>
                     <div class="input-group mb-3">
-                        <textarea name="message" placeholder="Message" class="form-control" cols="20" rows="5"></textarea>
+                        <textarea name="message" autocomplete="off" placeholder="Message" class="form-control" cols="20" rows="5"></textarea>
                     </div>
                     <div class="input-group mb-3 justify-content-end">
                         <input type="submit" class="btn btn-default" value="Send">

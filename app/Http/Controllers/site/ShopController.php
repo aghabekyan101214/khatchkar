@@ -28,7 +28,9 @@ class ShopController extends Controller
     {
         $items = Type::with(["items" => function($query){
             $query->where("category", Product::CATEGORIES[0]);
-        }])->get();
+        }])->whereHas("items", function($query) {
+            $query->where("category", Product::CATEGORIES[0]);
+        })->get();
         $products = Product::orderBy("id", "desc")->where("category", Product::CATEGORIES[0])->paginate(5000);
         return view(self::VIEW . ".index", compact("items", "products"));
     }

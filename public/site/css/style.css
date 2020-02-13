@@ -2,10 +2,22 @@
 #nav{
     transition: .5s;
 }
+body{
+    background: black;
+}
+.logo {
+    height: 70px;
+}
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .bg-black {
-    background: #161616;
+    background: black;
+}
+.b-rad{
+    border-radius: 10px 10px 0 0;
+}
+.ls-1{
+    letter-spacing: 0.08rem;
 }
 .navbar-expand-lg .navbar-nav .nav-link{
     padding: 0;
@@ -18,12 +30,23 @@
 }
 .home-h1{
     letter-spacing: 2px;
-    color: gray;
+    color: white;
     font-size: 60px;
 }
 .title{
     letter-spacing: 2px;
 }
+.kh-cont hr {
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+.kh-cont {
+    margin-bottom: 15px;
+}
+.kh-back{
+    background: #8181814a;
+    border-radius: 10px;
+}
+
 .kh-cont img {
     transition: .7s;
     cursor: pointer;
@@ -106,11 +129,12 @@
 /*footer*/
 
 footer {
-    background: #151515;
-    padding: 100px 0;
+    padding: 25px 0 15px 0;
+    background: black;
 }
 footer p {
     font-size: 14px;
+    margin-bottom: 0;
 }
 
 
@@ -122,6 +146,9 @@ footer p {
     #nav.navbar{
         height: 90px;
         padding-bottom: 0;
+    }
+    .navbar-brand{
+        margin-left: 150px;
     }
     #nav .nav-item:hover{
         border-bottom: 1px solid rgba(255,255,255,.75);

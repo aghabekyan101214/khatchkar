@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/plugins/images/favicon.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('site/images/favicon.svg') }}">
     <title>Khatchkar</title>
 
     <!-- Bootstrap Core CSS -->
@@ -17,7 +17,6 @@
     <link href="{{asset('site/css/style.css')}}" rel="stylesheet">
     <!-- jQuery -->
     <script src="{{asset('site/jquery/jquery.min.js')}}"></script>
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 </head>
 <body class="fix-header">
 @if (\Session::has('success'))
@@ -25,7 +24,7 @@
 @endif
 <div class="page-wrapper">
     <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top" id="nav">
-        <a class="navbar-brand ml-lg-5" href="/">MyKhatchkarLogo</a>
+        <a class="navbar-brand" href="/"><img class="logo" src="{{ asset("site/images/logo.png") }}" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

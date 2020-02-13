@@ -35,6 +35,9 @@
 	text-align: center;
 	padding: 50px 20px;
 }
+.og-expander{
+    z-index: 999;
+}
 
 /* Header Style */
 .gal .codrops-top {
