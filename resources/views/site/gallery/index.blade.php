@@ -17,8 +17,8 @@
                     <ul id="og-grid" class="og-grid">
                         @foreach($gallery as $g)
 
-                            <li>
-                                <a href="#" data-largesrc="{{ asset("uploads/$g->image") }}" data-title="{{ $g->name }}" data-description="{{ $g->description }}">
+                            <li class="image-det">
+                                <a href="#" onclick="getData('{{ json_encode($g) }}', this, '{{ $g->type->name }}')" data-largesrc="{{ asset("uploads/$g->image") }}" data-title="{{ $g->name }}" data-description="{{ $g->description }}">
                                     <img class="img-fluid" src="{{ asset("uploads/$g->image") }}" alt="{{ $g->name }}"/>
                                 </a>
                             </li>
@@ -35,5 +35,20 @@
         $(function() {
             Grid.init();
         });
+        function getData(dataPassed, self, type) {
+            let data = JSON.parse(dataPassed);
+            let html = `
+                <p class="text-white d-flex justify-content-between"> <span>Price:</span> <span class="font-weight-bold ls-1">$ ${data.price}</span> </p>
+                <p class="text-white d-flex justify-content-between"> <span>Type:</span> <span class="font-weight-bold ls-1"> ${type}</span> </p>
+                <p class="text-white d-flex justify-content-between"> <span>Material:</span> <span class="font-weight-bold ls-1">${data.material}</span> </p>
+                <p class="text-white d-flex justify-content-between"> <span>Height:</span> <span class="font-weight-bold ls-1">$ ${data.height}</span> </p>
+                <p class="text-white d-flex justify-content-between"> <span>Width:</span> <span class="font-weight-bold ls-1">$ ${data.width}</span> </p>
+                <p class="text-white d-flex justify-content-between"> <span>Thickness:</span> <span class="font-weight-bold ls-1">$ ${data.thickness}</span> </p>
+            `;
+            setTimeout(function () {
+                $(document).find(".og-details").find("p").remove();
+                $(document).find(".og-details").append(html);
+            }, 5)
+        }
     </script>
 @endsection

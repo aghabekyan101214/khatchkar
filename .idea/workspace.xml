@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="26604ee9-27e6-48a4-b73a-8444ffa34647" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/site/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/site/ShopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/gallery/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/gallery/css/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/gallery/js/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/gallery/js/grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/images/home-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/images/home-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/client.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/about/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/about/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/site/contact/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/contact/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/shop/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/shop/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/gallery/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/gallery/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,23 +133,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/site" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/site/upload" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/site" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/site/upload" />
       <recent name="$PROJECT_DIR$/resources/views/site" />
       <recent name="$PROJECT_DIR$/resources/views/site/gallery" />
       <recent name="$PROJECT_DIR$/resources/views/site/about" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/site" />
-      <recent name="$PROJECT_DIR$/app/helpers" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/site" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -182,7 +174,8 @@
       <workItem from="1581398487708" duration="21229000" />
       <workItem from="1581483923838" duration="74000" />
       <workItem from="1581511914459" duration="75000" />
-      <workItem from="1581591169278" duration="10826000" />
+      <workItem from="1581591169278" duration="11473000" />
+      <workItem from="1581657073155" duration="4953000" />
     </task>
     <servers />
   </component>
