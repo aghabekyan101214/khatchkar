@@ -42,6 +42,10 @@ body{
 .kh-cont {
     margin-bottom: 15px;
 }
+#play {
+    height: 40px;
+    width: auto;
+}
 .kh-back{
     background: #8181814a;
     border-radius: 10px;

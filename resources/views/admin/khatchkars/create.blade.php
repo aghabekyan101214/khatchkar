@@ -131,6 +131,16 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label class="control-label col-md-2">Video Url</label>
+                                    <div class="col-md-9">
+                                        <input type="text" placeholder="Video Url" value="{{ $product->video_url ?? old("video_url") }}" class="form-control" name="video_url">
+                                        @error('video_url')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
                                     <label class="control-label col-md-2">Description</label>
                                     <div class="col-md-9">
                                         <textarea placeholder="Description" name="description" class="form-control">{{ $product->description ?? old("location") }}</textarea>

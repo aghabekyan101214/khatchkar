@@ -45,6 +45,9 @@
                 <p class="text-white d-flex justify-content-between"> <span>Width:</span> <span class="font-weight-bold ls-1">$ ${data.width}</span> </p>
                 <p class="text-white d-flex justify-content-between"> <span>Thickness:</span> <span class="font-weight-bold ls-1">$ ${data.thickness}</span> </p>
             `;
+            if(data.video_url != null) {
+                html += `<p class="text-white d-flex justify-content-between align-items-center"> <span>How It's Made:</span> <a href="${data.video_url}" target="_blank"><img id="play" src="{{ asset("site/images/play.png") }}" alt="Play Icon"></a> </p>`;
+            }
             setTimeout(function () {
                 $(document).find(".og-details").find("p").remove();
                 $(document).find(".og-details").append(html);

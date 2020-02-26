@@ -117,14 +117,8 @@
 	color: #999;
 }
 
-.og-details a {
+.og-details > a {
     display: none;
-}
-
-.og-details a::before {
-	content: '\2192';
-	display: inline-block;
-	margin-right: 10px;
 }
 
 .og-details a:hover {
