@@ -60,7 +60,7 @@ body{
     transition: .7s;
 }
 .kh-cont .img-cont{
-    max-height: 455px;
+    max-height: 550px;
 }
 .work-section{
     background: rgb(21, 21, 21);
@@ -80,7 +80,7 @@ body{
     display: flex;
 }
 .shop .kh-cont .img-cont {
-    max-height: 320px;
+    max-height: 550px;
 }
 .shop .nav-link {
     color: rgba(255,255,255,.5);
