@@ -3,8 +3,8 @@
     <div class="home d-flex align-items-center" style="background-image: url('{{ asset("site/images/home-bg.jpg") }}')">
         <section class="bg-section position-relative">
             <div class="container-fluid">
-                <h1 class="home-h1 ml-5">Handcarved Monuments</h1>
-{{--                <h3 class="ml-5 mt-3 text-white">We Make Khatchkars for 50 Years</h3>--}}
+                <h1 class="home-h1 ml-5">My Khatchkar</h1>
+                <h3 class="ml-5 mt-3 text-white">Hand Carved Monuments</h3>
             </div>
         </section>
     </div>
