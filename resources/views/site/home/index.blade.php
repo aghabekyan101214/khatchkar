@@ -33,7 +33,7 @@
 
                 @endforeach
 
-                    <div class="cont">
+                    <div class="col-md-12">
                         <h1 class="title text-center text-white">Our Mission Is</h1>
                         <h4 class="text-white text-center mb-5">We are a social enterprise, which imports Khatchkars from Armenia. </h4>
                         <p class="text-white ls-1">Our mission is <br>
