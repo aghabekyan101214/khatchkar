@@ -19,15 +19,15 @@
                             <div class="col-md-12 overflow-hidden img-cont p-0 b-rad">
                                 <img class="img-fluid" src="{{ asset("uploads/$r->image") }}" alt="{{ $r->name }}">
                             </div>
-                            <div class="col-md-12 mt-3 pb-1 pl-4">
-                                <h4 class="text-white">{{ $r->name }}</h4>
-                                <hr>
-                                <p class="text-white d-flex justify-content-between"> <span>Type:</span> <span class="font-weight-bold ls-1">{{ $r->type->name }}</span></p>
-                                <p class="text-white d-flex justify-content-between"> <span>Material:</span> <span class="font-weight-bold ls-1">{{ $r->material }}</span> </p>
-                                <p class="text-white d-flex justify-content-between"> <span>Height:</span> <span class="font-weight-bold ls-1">{{ $r->height }}</span> </p>
-                                <p class="text-white d-flex justify-content-between"> <span>Width:</span> <span class="font-weight-bold ls-1">{{ $r->width }}</span> </p>
-                                <p class="text-white d-flex justify-content-between"> <span>Thickness:</span> <span class="font-weight-bold ls-1">{{ $r->thickness }}</span> </p>
-                            </div>
+{{--                            <div class="col-md-12 mt-3 pb-1 pl-4">--}}
+{{--                                <h4 class="text-white">{{ $r->name }}</h4>--}}
+{{--                                <hr>--}}
+{{--                                <p class="text-white d-flex justify-content-between"> <span>Type:</span> <span class="font-weight-bold ls-1">{{ $r->type->name }}</span></p>--}}
+{{--                                <p class="text-white d-flex justify-content-between"> <span>Material:</span> <span class="font-weight-bold ls-1">{{ $r->material }}</span> </p>--}}
+{{--                                <p class="text-white d-flex justify-content-between"> <span>Height:</span> <span class="font-weight-bold ls-1">{{ $r->height }}</span> </p>--}}
+{{--                                <p class="text-white d-flex justify-content-between"> <span>Width:</span> <span class="font-weight-bold ls-1">{{ $r->width }}</span> </p>--}}
+{{--                                <p class="text-white d-flex justify-content-between"> <span>Thickness:</span> <span class="font-weight-bold ls-1">{{ $r->thickness }}</span> </p>--}}
+{{--                            </div>--}}
                         </div>
                     </div>
 
