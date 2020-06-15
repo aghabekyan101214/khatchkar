@@ -6,8 +6,8 @@
                 <div class="col-md-6">
                     <h1 class="ls-2 mb-5 text-white">About Us</h1>
                     <div class="cont mb-5">
-                        <p class="ls-2 text-white">During the summer months of 2017, Maral was volunteering for Birthright Armenia, and Tigran was working and living in his home town of Vanadzor. They met during a social outing in the city. Tigran and Maral had an instant connection which immediately deepened with each passing moment spent together. They were married 6 months later, and are now expecting their first child.</p>
-                        <p class="ls-2 text-white">Tigran and Maral, though currently living in Cleveland Ohio, both felt the insatiable desire to help their homeland. They began brainstorming; how can we connect our Armenian roots to our newly established life in America? Is it possible to disperse our Armenian heritage throughout the entire world in an everlasting manner? The answer? The beauty of handcrafted khachkars. They immediately got to work, trying to fuse our worlds of traditional Armenia and contemporary America to bring diasporan Armenians a taste of history. And thus, My Khachkar was born.</p>
+                        <p class="ls-2 text-white">During the summer months of 2017, Maral was volunteering for Birthright Armenia, and Tigran was working and living in his home town of Vanadzor. They met during a social outing in the city. Tigran and Maral had an instant connection which immediately deepened with each passing moment spent together. They were married 6 months later, and have started a family.</p>
+                        <p class="ls-2 text-white">Tigran and Maral, though currently living in Cleveland Ohio, both felt the insatiable desire to help their homeland. They began brainstorming; how can we connect our Armenian roots to our newly established life in America? Is it possible to disperse our Armenian heritage throughout the entire world in an everlasting manner? The answer? The beauty of handcrafted khatchkars. They immediately got to work, trying to fuse our worlds of traditional Armenia and contemporary America to bring diasporan Armenians a taste of history. And thus, My Khatchkar was born.</p>
                     </div>
 {{--                    <div class="cont mb-5">--}}
 {{--                        <h4 class="ls-2 mb-4 text-white">Our mission is</h4>--}}
@@ -22,7 +22,7 @@
 {{--                    </div>--}}
                 </div>
                 <div class="col-md-6">
-                    <img src="{{ asset("site/images/about/about.webp") }}" class="img-fluid" alt="">
+                    <img src="{{ asset("site/images/about/about-min.jpg") }}" class="img-fluid" alt="">
                 </div>
             </div>
         </div>

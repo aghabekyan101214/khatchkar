@@ -34,15 +34,13 @@
                 @endforeach
 
                     <div class="col-md-12">
-                        <h1 class="title text-center text-white">Our Mission Is</h1>
-                        <h4 class="text-white text-center mb-5">We are a social enterprise, which imports Khatchkars from Armenia. </h4>
-                        <p class="text-white ls-1">Our mission is <br>
-                            To support the Armenian Church and Cultural sustainability in the Diocese
-                            10% of each order will be donated to The Armenian Parish or organization of your choice.</p>
-                        <p class="text-white ls-1">To support artists in Armenia to keep Khatchkar making traditions alive.
-                            With this enterprise, we aim to restore the destroyed Khatchkars from Djugha and other parts of Historic Armenia by recreating the designs.
+                        <h1 class="title text-center text-white">My Khatchkar</h1>
+                        <h4 class="text-white text-center mb-5">Is a social enterprise which imports Khatchkars from Armenia.</h4>
+                        <p class="text-white ls-1">Supports the Armenian Church and Cultural organizations in the Diocese, as 10% of each order will be donated to the Armenian Parish or organization of your choice.</p>
+                        <p class="text-white ls-1">Supports artists in Armenia to keep Khatchkar making traditions alive.
                         </p>
-                        <p class="text-white ls-1">Our Khatchkar makers are experienced in their work and some of them are well known in Armenia and all over the world. The works of our artists are standing in several countries, such as the United States, The Baltic States, Russia, France and many more.</p>
+                        <p class="text-white ls-1">Aims to restore the destroyed Khatchkars from Djugha and other parts of Historic Armenia by recreating the designs.</p>
+                        <p class="text-white ls-1">Employs experienced Khatchkar makers, some of whom are well known in Armenia and all over the world. The works of our artists are standing in several countries, such as the United States, The Baltic States, Russia, France and many more.</p>
                         <p class="text-white ls-1">God bless all of us, we are a blessed nation, we are survivors and creators.</p>
                     </div>
 

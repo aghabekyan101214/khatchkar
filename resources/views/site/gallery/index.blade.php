@@ -1,57 +1,80 @@
 @extends("layouts.client")
 @section("content")
-    <link rel="stylesheet" type="text/css" href="{{ asset("site/gallery/css/default.css") }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset("site/gallery/css/component.css") }}" />
-    <script src="{{ asset("site/gallery/js/modernizr.custom.js") }}"></script>
-
-    <div class="gallery">
+    <div class="shop pb-5">
         <section class="title-section p-lg-5">
             <div class="container p-lg-5">
-                <h1 class="text-center text-white ls-2">Khatchkar Gallery</h1>
+                <h1 class="text-center text-white ls-2">Our Khatchkar Shop</h1>
             </div>
         </section>
+        <div class="item-cont">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="col-md-12">
+                            <h5 class="ls-2 font-weight-light text-white categories">Categories</h5>
+                            <hr class="bg-light">
+                            <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link pl-0 active" id="v-pills-all-tab" data-toggle="pill" href="#v-pills-all" role="tab" aria-controls="v-pills-all" aria-selected="true">All Products</a>
+                                @foreach($items as $bin => $i)
+                                    <a class="nav-link pl-0" id="v-pills-{{ $i->id }}-tab" data-toggle="pill" href="#v-pills-{{ $i->id }}" role="tab" aria-controls="v-pills-{{ $i->id }}" aria-selected="true">{{ $i->name }}</a>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 pt-5">
+                        <div class="tab-content" id="v-tabContent">
+                            <div class="tab-pane row fade show active" id="v-pills-all" role="tabpanel" aria-labelledby="v-pills-all-tab">
+                                @foreach($products as $product)
 
-        <div class="gal">
-            <div class="cont">
-                <div class="main">
-                    <ul id="og-grid" class="og-grid">
-                        @foreach($gallery as $g)
+                                    <div class="col-md-4 kh-cont">
+                                        <div class="col-md-12 kh-back p-0">
+                                            <div class="col-md-12 overflow-hidden img-cont p-0 b-rad">
+                                                <img class="img-fluid" src="{{ asset("uploads/$product->image") }}" alt="{{ $product->name }}">
+                                            </div>
+                                            <div class="col-md-12 mt-3 pb-1 pl-4">
+                                                <h4 class="text-white">{{ $product->name }}</h4>
+                                                <hr>
+                                                <p class="text-white d-flex justify-content-between"> <span>Price:</span> <span class="font-weight-bold ls-1">${{ $product->price }}</span> </p>
+                                                <p class="text-white d-flex justify-content-between"> <span>Type:</span> <span class="font-weight-bold ls-1">{{ $product->type->name }}</span></p>
+                                                <p class="text-white d-flex justify-content-between"> <span>Material:</span> <span class="font-weight-bold ls-1">{{ $product->material }}</span> </p>
+                                                <p class="text-white d-flex justify-content-between"> <span>Height:</span> <span class="font-weight-bold ls-1">{{ $product->height }}</span> </p>
+                                                <p class="text-white d-flex justify-content-between"> <span>Width:</span> <span class="font-weight-bold ls-1">{{ $product->width }}</span> </p>
+                                                <p class="text-white d-flex justify-content-between"> <span>Thickness:</span> <span class="font-weight-bold ls-1">{{ $product->thickness }}</span> </p>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                            <li class="image-det">
-                                <a href="#" onclick="getData('{{ json_encode($g) }}', this, '{{ $g->type->name }}')" data-largesrc="{{ asset("uploads/$g->image") }}" data-title="{{ $g->name }}" data-description="{{ $g->description }}">
-                                    <img class="img-fluid" src="{{ asset("uploads/$g->image") }}" alt="{{ $g->name }}"/>
-                                </a>
-                            </li>
+                                @endforeach
+                            </div>
+                            @foreach($items as $bin => $item)
+                                <div class="tab-pane row fade show" id="v-pills-{{ $item->id }}" role="tabpanel" aria-labelledby="v-pills-{{ $item->name }}-tab">
+                                    @foreach($item->items as $i)
 
-                        @endforeach
-                    </ul>
+                                        <div class="col-md-4 kh-cont">
+                                            <div class="col-md-12 kh-back p-0">
+                                                <div class="col-md-12 overflow-hidden img-cont p-0 b-rad">
+                                                    <img class="img-fluid" src="{{ asset("uploads/$i->image") }}" alt="{{ $i->name }}">
+                                                </div>
+                                                <div class="col-md-12 mt-3 pb-1 pl-4">
+                                                    <h4 class="text-white">{{ $i->name }}</h4>
+                                                    <hr>
+                                                    <p class="text-white d-flex justify-content-between"> <span>Price:</span> <span class="font-weight-bold ls-1">${{ $i->price }}</span> </p>
+                                                    <p class="text-white d-flex justify-content-between"> <span>Type:</span> <span class="font-weight-bold ls-1">{{ $i->type->name }}</span></p>
+                                                    <p class="text-white d-flex justify-content-between"> <span>Material:</span> <span class="font-weight-bold ls-1">{{ $i->material }}</span> </p>
+                                                    <p class="text-white d-flex justify-content-between"> <span>Height:</span> <span class="font-weight-bold ls-1">{{ $i->height }}</span> </p>
+                                                    <p class="text-white d-flex justify-content-between"> <span>Width:</span> <span class="font-weight-bold ls-1">{{ $i->width }}</span> </p>
+                                                    <p class="text-white d-flex justify-content-between"> <span>Thickness:</span> <span class="font-weight-bold ls-1">{{ $i->thickness }}</span> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    @endforeach
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
-            </div><!-- /container -->
+            </div>
         </div>
     </div>
-    <script src="{{ asset("site/gallery/js/jq.js") }}"></script>
-    <script src="{{ asset("site/gallery/js/grid.js") }}"></script>
-    <script>
-        $(function() {
-            Grid.init();
-        });
-        function getData(dataPassed, self, type) {
-            let data = JSON.parse(dataPassed);
-            let html = `
-                <p class="text-white d-flex justify-content-between"> <span>Price:</span> <span class="font-weight-bold ls-1">$ ${data.price}</span> </p>
-                <p class="text-white d-flex justify-content-between"> <span>Type:</span> <span class="font-weight-bold ls-1"> ${type}</span> </p>
-                <p class="text-white d-flex justify-content-between"> <span>Material:</span> <span class="font-weight-bold ls-1">${data.material}</span> </p>
-                <p class="text-white d-flex justify-content-between"> <span>Height:</span> <span class="font-weight-bold ls-1">$ ${data.height}</span> </p>
-                <p class="text-white d-flex justify-content-between"> <span>Width:</span> <span class="font-weight-bold ls-1">$ ${data.width}</span> </p>
-                <p class="text-white d-flex justify-content-between"> <span>Thickness:</span> <span class="font-weight-bold ls-1">$ ${data.thickness}</span> </p>
-            `;
-            if(data.video_url != null) {
-                html += `<p class="text-white d-flex justify-content-between align-items-center"> <span>How It's Made:</span> <a href="${data.video_url}" target="_blank"><img id="play" src="{{ asset("site/images/play.png") }}" alt="Play Icon"></a> </p>`;
-            }
-            setTimeout(function () {
-                $(document).find(".og-details").find("p").remove();
-                $(document).find(".og-details").append(html);
-            }, 5)
-        }
-    </script>
 @endsection

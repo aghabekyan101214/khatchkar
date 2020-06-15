@@ -57,11 +57,13 @@
                 </div>
                 <div class="col-md-2">
                     <div class="text-center">
-                        <img style="height: 30px" src="{{ asset("site/images/fb.png") }}" alt="">
+                        <a href="https://www.facebook.com/armeniankhatchkar/" target="_blank">
+                            <img style="height: 30px" src="{{ asset("site/images/fb.png") }}" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <p class="text-white text-right">Powered By Aimtech</p>
+                    <p class="text-white text-right"><a style="text-decoration: none; color: white" href="https://aimtech.am" target="_blank">Powered By Aimtech</a></p>
                 </div>
             </div>
         </div>
