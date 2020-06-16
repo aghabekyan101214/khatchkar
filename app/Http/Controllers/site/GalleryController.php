@@ -4,6 +4,7 @@ namespace App\Http\Controllers\site;
 
 use App\admin\Product;
 use App\admin\Type;
+use App\admin\Video;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -25,12 +26,8 @@ class GalleryController extends Controller
      */
     public function index()
     {
-        $items = Type::with(["items" => function($query){
-            $query->where("category", Product::CATEGORIES[1]);
-        }])->whereHas("items", function($query) {
-            $query->where("category", Product::CATEGORIES[1]);
-        })->get();
+        $videos = Video::orderBy("id", "desc")->get();
         $products = Product::orderBy("id", "desc")->where("category", Product::CATEGORIES[1])->paginate(5000);
-        return view(self::VIEW . ".index", compact("items", "products"));
+        return view(self::VIEW . ".index", compact("videos", "products"));
     }
 }

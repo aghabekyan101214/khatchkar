@@ -78,7 +78,6 @@ class ProductController extends Controller
         $product->thickness = $request->thickness;
         $product->image = $file;
         $product->location = $request->location;
-        $product->video_url = $request->video_url;
         $product->description = $request->description;
 
         $product->save();
@@ -143,7 +142,6 @@ class ProductController extends Controller
         $product->width = $request->width;
         $product->thickness = $request->thickness;
         $product->location = $request->location;
-        $product->video_url = $request->video_url;
         $product->description = $request->description;
 
         $product->save();

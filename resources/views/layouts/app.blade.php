@@ -116,6 +116,13 @@
                         </a>
                     </li>
 
+                    <li>
+                        <a href="/admin/videos" class="waves-effect">
+                            <i class="mdi mdi-video fa-fw"></i>
+                            <span class="hide-menu">Videos</span>
+                        </a>
+                    </li>
+
                 </ul>
             </div>
         </div>

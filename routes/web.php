@@ -24,4 +24,5 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function(){
     Route::get('/', 'admin\ProductController@index');
     Route::resource('types', 'admin\TypeController');
     Route::resource('products', 'admin\ProductController');
+    Route::resource('videos', 'admin\VideoController');
 });
